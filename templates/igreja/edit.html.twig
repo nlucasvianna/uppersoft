@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Igreja{% endblock %}
+
+{% block body %}
+    <h1>Edit Igreja</h1>
+
+    {{ include('igreja/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_igreja_index') }}">back to list</a>
+
+    {{ include('igreja/_delete_form.html.twig') }}
+{% endblock %}

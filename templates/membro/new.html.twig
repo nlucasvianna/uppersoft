@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Membro{% endblock %}
+
+{% block body %}
+    <h1>Create new Membro</h1>
+
+    {{ include('membro/_form.html.twig') }}
+
+    <a href="{{ path('app_membro_index') }}">back to list</a>
+{% endblock %}
